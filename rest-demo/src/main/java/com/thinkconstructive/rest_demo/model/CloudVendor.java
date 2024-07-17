@@ -1,12 +1,13 @@
 package com.thinkconstructive.rest_demo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="cloud_vendor_info")
 public class CloudVendor {
 
+   // CloudVendor cloudVendor;
+    @Id
     private String vendorId;
     private String vendorName;
     private String vendorAddress;
